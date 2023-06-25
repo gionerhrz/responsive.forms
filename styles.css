@@ -1,0 +1,179 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+
+    background: rgba(0, 77, 155, 0.9);
+    font-family:'Roboto', 'sans-serif';
+    font-weight: 400;    
+}
+
+
+.container{
+
+    background-color:snow;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 1.5px 1px 12px rgb(54, 54, 54) ;
+
+
+    /*Ancho y alto*/
+    width: 30vw;
+    height: 60vh;
+}
+
+.title{
+
+    font-size: 2rem;
+    font-family: 'Roboto','sans-serif';
+    font-weight: 400;
+
+    position: relative;
+    bottom: 10%;
+}
+
+
+
+label{
+
+    display: flex;
+    font-size: 1rem;
+    
+}
+
+#e-mail{
+
+    margin-bottom: 2.3vh;
+    width: 250px;
+    height: 2em;
+    
+    padding-left: 5px;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 3px;
+
+}
+
+/*Cambio de estado en los bordes del input e-mail*/
+#e-mail:hover{
+
+    
+   border:0.5px solid rgb(0, 128, 255);
+}
+
+#pass{
+
+    width: 250px;
+    height: 2em;
+    padding-left: 5px;
+    border:1px solid rgb(78, 78, 78);
+
+    border-radius: 3px;
+}
+/*Cambio en el estado de los bordes del input password*/
+#pass:hover{
+    border: 1px solid rgb(0, 128, 255)
+
+
+}
+
+.button-container{
+
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 5%;
+}
+
+.button-editable{
+
+    width: 250px;
+    height: 30px;
+    border: none;
+    font-size: 1rem;
+    
+
+    background-color: rgba(0,255,0,0.5);
+    cursor: pointer;
+}
+
+.button-editable:hover{
+
+   background-color: rgba(20, 216, 20, 0.5);
+}
+
+.button-editable:hover{
+
+    transition: all 0.5s ease-in-out;
+}
+
+.texto{
+   
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    top: 10.5%;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.texto-editable{
+
+    margin-bottom: 1.3vh;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    
+}
+
+.texto-vinculo{
+
+    color:rgb(21, 101, 250);
+    border-bottom: 1px solid rgb(21, 101, 250);
+
+}
+
+.texto-vinculo:active{
+
+    color:crimson;
+}
+
+
+.container-footer{
+
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translate(-50%);
+    
+}
+
+.texto-informativo-footer{
+
+    margin: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-left: 1.5px solid black;
+    border-right:1.5px solid black;
+    color:white;
+
+
+}    
